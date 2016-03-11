@@ -4,3 +4,93 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'base';
+@import 'variables';
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: $background-haze;
+
+}
+
+.card {
+  width: 55%;
+  max-width: 55%;
+  padding: $gutter-size;
+  background-color: $card-background;
+  box-shadow: $brand-shadow;
+
+}
+
+.card-title {
+  color: $card-text-color;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50em;
+  margin: 0 (-$gutter-size);
+  border-bottom: $brand-border;
+
+}
+
+.field__input-form {
+  flex-wrap: wrap;
+  margin: $gutter-size;
+  padding: 0;
+  border: 0;
+}
+
+.form__label-name {
+  margin: auto;
+  color: $label-color;
+  font-size: 0.7em;
+}
+
+.field-buttom {
+  color: $card-text-color;
+}
+
+.form__field-input {
+  flex-grow: 0;
+  max-width: 50%;
+  border: 0;
+  background-color: $card-background;
+  color: $card-text-color;
+  font-size: 1em;
+
+}
+
+.form-field__input {
+  margin-bottom: 2rem;
+}
+
+.top-form__label {
+  margin-bottom: 0.2em;
+}
+
+.top-form__bottom {
+  border-bottom: 2px solid $button-background;
+}
+
+.save-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 50rem;
+  margin-top: $gutter-size;
+}
+
+.save-button__form {
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  background-color: $button-background;
+  color: $card-background;
+  font-size: 1rem;
+  line-height: 2rem;
+
+}
