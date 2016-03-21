@@ -22,7 +22,6 @@
 }
 
 .card-title {
-  // flex-flow: column;
   margin: ($gutter * 2) $gutter $gutter;
 }
 
@@ -34,8 +33,10 @@
 
 .form-field {
   flex-grow: 1;
-  width: 29%;
+  width: calc((100% / 3) - $gutter - $gutter);
+  min-width: 18rem;
   margin: $gutter;
+
 }
 
 .top-form__label {
@@ -50,11 +51,12 @@
 }
 
 .top-form__bottom {
+  max-width: 100%;
   border-bottom: $brand-border;
 }
 
 .form__field-input {
-  max-width: 100%;
+  max-width: 10rem;
   padding: 0;
   border: 0;
   font-size: $gutter;
